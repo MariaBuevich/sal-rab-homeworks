@@ -27,7 +27,7 @@ function addInCartBtn(btn) {
 
 function addInCartNotification(title, price) {
     try {
-        createNotification(addInCartMessage(title, price));
+        createNotification(addInCartMessage(title, price), false, 'success');
     } catch (e) {
         createNotification('error', false, 'danger');
     }
